@@ -1,7 +1,8 @@
-def fitting():
+def logistic_fit(X, y, w = None, batch_size=None, learnig_rate=1e-2,
+        num_iterations=1000, return_history=False):
     return #value
 
-def predction():
+def logistic_predict(X,w):
     return #value
 
 
