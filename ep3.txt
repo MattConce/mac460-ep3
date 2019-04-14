@@ -1,0 +1,25 @@
+*REGRESSÃO LOGÍSTICA
+
+A saída do modelo de regressão logística é uma probabilidade, o que é
+ideal para modelos que exigem mais do que uma decisão binária.
+
+O modelo de classificação linear usa um limite bem estabelicido no sinal
+da saída. Para um dado vetor usando a função sign temos como resultado 1 ou -1.
+
+A regressão linear não tem nenhuma restrição.
+
+O modelo de regressão logística esta entre esses dois modelos pois queremos restringir
+a saída em valores entre 0 e 1. Usamos a função logistica para isso.
+
+Esse resultado pode ser interpretado como uma probabilidade para uma decisão binária.
+
+
+GRADIENTE DESCENDENTE
+
+A ideia é minimizar uma função para achar um mínimo local (talvez global), o valor
+mínimo achado depende dos pesos inciais. Mas como usaremos a regressão logística com
+a função de erro cross-entropy teremos garantido um mínimo global independente dos 
+valores do peso inicial, já que a função cross-entropy é convexa.
+
+Função croos-entropy está definida no livro na página 95 assim como o algoritmo do
+gradiente descendente.
