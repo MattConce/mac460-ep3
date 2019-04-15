@@ -22,7 +22,11 @@ def logistic_fit(X, y, w = None, batch_size=None, learning_rate=1e-2,
         gt = (-1.0/batch_size)*e
         hw.append(w)
         w += learning_rate*(-gt)
-    return w
+
+    if return_history == False:
+        return w
+    else:
+        return w, hw
 
 
 def logistic_predict(X,w):
