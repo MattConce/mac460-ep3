@@ -23,8 +23,6 @@
 
 \section{Regressão logística}
 
-Regressão Ligistica:
-
 A saída do modelo de regressão logística é uma probabilidade, o que é
 ideal para modelos que exigem mais do que uma decisão binária.
 
@@ -39,7 +37,7 @@ a saída em valores entre 0 e 1. Usamos a função logistica para isso.
 Esse resultado pode ser interpretado como uma probabilidade para uma decisão binária.
 
 
-Gradiente descendente:
+\section{Gradiente descendente}
 
 
 A ideia é minimizar uma função para achar um mínimo local (talvez global), o valor
@@ -50,9 +48,14 @@ valores do peso inicial, já que a função cross-entropy é convexa.
 Função croos-entropy está definida no livro na página 95 assim como o algoritmo do
 gradiente descendente.
 
-Testes: 
+\section{Testes} 
 
 O algoritmo de teste, encontrado no arquivo util.py, gera dois aglomerados de distribuição normal multivariada (com centro diferentes). É possível perceber que os erros de classificação do algoritmo aumenta conforme modificamos determinados parâmetros como o aumento acessivo do numero de iterações, ou diminuindo o valor de batch\_size, fazendo com que o resultado, em duas dimensões, formasse uma reta decrescente. Ao diminuir ou aumentar o learning\_rate, temos que o erro de classificação aumenta, portanto precisamos incluir um número intermediário para ter um resultado plausível (pelo anunciado foi escolhido o 1e-2). 
 
-\end{document}
 
+\bibliographystyle{plain}
+\bibliography{references}
+Learning from Data, a Short Course. Yaser S. Abu-Mostafa, Malik Magdon-Ismail, Hsuan-Tien Lin
+
+
+\end{document}
