@@ -1,3 +1,10 @@
+'''
+
+  Matheus Santos - 10297672
+  Raul Reis - 8535596
+
+'''
+
 import numpy as np
 
 
